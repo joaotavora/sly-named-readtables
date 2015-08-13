@@ -1,6 +1,6 @@
 # NAMED-READTABLES support for SLY
 
-`sly-named-readtables` is an external contrib for [SLY]() that enables
+`sly-named-readtables` is an external contrib for [SLY][sly] that enables
 different readtables to be active in different parts of the same file:
 
 ![screenshot](screenshot.png)
@@ -33,7 +33,7 @@ In case you already have SLY loaded and running, you might have to
 have `named-readtables` setup in your Lisp before it takes any actual
 effect though. That's easy, just `(ql:quickload :named-readtables)`.
 
-
+[sly]: https://github.com/capitaomorte/sly
 
 
 
