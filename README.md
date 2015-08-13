@@ -5,6 +5,9 @@ different readtables to be active in different parts of the same file:
 
 ![screenshot](screenshot.png)
 
+Based on the original idea and implementation by user "budden"
+discussed in https://github.com/slime/slime/pull/259.
+
 ## Install from MELPA
 
 Give me some time to set this up
