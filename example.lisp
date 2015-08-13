@@ -1,22 +1,24 @@
+(eval-when (:compile-toplevel :load-toplevel :execute)
+  (ql:quickload :named-readtables))
+
 (defpackage #:silly-named-readtables (:use :cl #:named-readtables))
 (in-package #:silly-named-readtables)
 
-(defreadtable :versioned-function
+(defreadtable :silly-table
   (:merge :standard)
   (:dispatch-macro-char #\# #\' (lambda (stream char arg)
                                   (declare (ignore char arg))
                                   (let ((fname (read stream)))
                                     (etypecase fname
-                                      ((OR SYMBOL (CONS (EQL CL:SETF) *))
+                                      ((or symbol (cons (eql cl:setf) *))
                                        `(function ,fname))
-                                      (CONS `(vfunction ,@fname))))))
+                                      (cons `(silly-function ,@fname))))))
   (:case :upcase))
 
+(read-from-string "#'foo")           ;; => #'FOO
+(read-from-string "#'(foo bar)")     ;; => #'(FOO BLA)
 
-(read-from-string "#'some-function") ;; => #'FUNCTION
-(read-from-string "#'(version bla)") ;; => #'(VERSION BLA)
+(in-readtable :silly-table)
 
-(in-readtable :versioned-function)
-
-(read-from-string "#'some-function") ;; => #'FUNCTION
-(read-from-string "#'(version bla)") ;; => (VFUNCTION VERSION BLA)
+(read-from-string "#'some-function") ;; => #'SOME-FUNCTION
+(read-from-string "#'(foo bar)")     ;; => (SILLY-FUNCTION FOO BAR)
