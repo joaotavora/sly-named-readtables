@@ -1,12 +1,12 @@
-;;; sly-named-readtables.el --- Automatically parse in-readtable forms in Lisp buffers  -*- lexical-binding: t; -*-
+;;; sly-named-readtables.el ---Support named readtables in Common Lisp files  -*- lexical-binding: t; -*-
 ;;
-;; Copyright (C) 2015 João Távora
-;;
-;; Author: João Távora <joaotavora@gmail.com>
-;; Keywords: languages, lisp, sly
-;; URL: https://github.com/capitaomorte/sly-named-readtables
 ;; Version: 0.1
-;; Package-Requires: ((sly "1.0.0-beta-2"))
+;; URL: https://github.com/capitaomorte/sly-named-readtables
+;; Keywords: languages, lisp, sly
+;; Package-Requires: ((emacs "24.4") (sly "1.0.0-beta-2"))
+;; Author: João Távora <joaotavora@gmail.com>
+;; 
+;; Copyright (C) 2015 João Távora
 ;;
 ;; This file is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
