@@ -1,9 +1,9 @@
-;;; sly-named-readtables.el ---Support named readtables in Common Lisp files  -*- lexical-binding: t; -*-
+;;; sly-named-readtables.el --- Support named readtables in Common Lisp files  -*- lexical-binding: t; -*-
 ;;
 ;; Version: 0.1
 ;; URL: https://github.com/capitaomorte/sly-named-readtables
 ;; Keywords: languages, lisp, sly
-;; Package-Requires: ((emacs "24.4") (sly "1.0.0-beta-2"))
+;; Package-Requires: ((sly "1.0.0-beta2"))
 ;; Author: João Távora <joaotavora@gmail.com>
 ;; 
 ;; Copyright (C) 2015 João Távora
