@@ -3,7 +3,8 @@
 ;; Copyright (C) 2015 João Távora
 ;;
 ;; Author: João Távora <joaotavora@gmail.com>
-;; Keywords: lisp
+;; Keywords: languages, lisp, sly
+;; URL: https://github.com/capitaomorte/sly-named-readtables
 ;; Version: 0.1
 ;; Package-Requires: ((sly "1.0.0-beta-2"))
 ;;
