@@ -16,7 +16,7 @@ Give me some time to set this up
 
 Since this is an external contrib with both Elisp and Lisp parts,
 merely loading the Elisp will have little effect. The contrib has to
-registered in SLY's `sly-contribs` variable for SLY to take care of
+be registered in SLY's `sly-contribs` variable for SLY to take care of
 loading the Lisp side on demand.
 
 For convenience, the `sly-named-readtables-autoloads` file takes care

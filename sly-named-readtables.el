@@ -32,7 +32,7 @@
 ;;
 ;; Since this is an external contrib with both Elisp and Lisp parts,
 ;; merely loading the Elisp will have little effect. The contrib has
-;; to registered in SLY's `sly-contribs' variable for SLY to take care
+;; to be registered in SLY's `sly-contribs' variable for SLY to take care
 ;; of loading the Lisp side on demand.
 ;;
 ;; For convenience, the `sly-named-readtables-autoloads.el' Elisp file
@@ -54,6 +54,8 @@
 ;; effect though. That's easy, just `(ql:quickload :named-readtables)'.
 ;; 
 ;;; Code:
+
+(require 'sly)
 
 (define-sly-contrib sly-named-readtables
   "Automatically parse in-readtable forms in Lisp buffers"
