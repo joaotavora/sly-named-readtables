@@ -14,7 +14,14 @@ Give me some time to set this up
 
 ## Melpa-less install
 
-This should work fine:
+Since this is an external contrib with both Elisp and Lisp parts,
+merely loading the Elisp will have little effect. The contrib has to
+registered in SLY's `sly-contribs` variable for SLY to take care of
+loading the Lisp side on demand.
+
+For convenience, the `sly-named-readtables-autoloads` file takes care
+of this automatically. So the following setup in your `~/.emacs` or
+`~/.emacs.d/init/el` init file should be enough.
 
 ```elisp
 ;;; regular SLY setup
