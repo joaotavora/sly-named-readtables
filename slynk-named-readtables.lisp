@@ -29,7 +29,8 @@ The function should return a READTABLEP object")
   (let* ((guess (and named-readtable
                      (find-readtable-by-name named-readtable))))
     (lambda ()
-      (with-buffer-syntax (nil guess)
+      (let ((*buffer-readtable* (or guess
+                                    *buffer-readtable*)))
         (funcall in-function)))))
 
 (pushnew 'wrap-in-named-readtable *eval-for-emacs-wrappers*)
