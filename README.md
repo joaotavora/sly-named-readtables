@@ -1,3 +1,5 @@
+[![MELPA](http://melpa.org/packages/sly-named-readtables-badge.svg)](http://melpa.org/#/sly-named-readtables)
+
 # NAMED-READTABLES support for SLY
 
 `sly-named-readtables` is an external contrib for [SLY][sly] that enables
@@ -10,7 +12,13 @@ discussed in https://github.com/slime/slime/pull/259.
 
 ## Install from MELPA
 
-Give me some time to set this up
+Perform the [usual MELPA setup](http://melpa.org) 
+and then do `M-x package-install RET sly-named-readtables RET`.
+
+`M-x sly` should now bring up a readtable-able SLY.
+
+(for the first time only, you'll have to `M-x sly-setup` before to 
+correctly setup contribs)
 
 ## Melpa-less install
 
