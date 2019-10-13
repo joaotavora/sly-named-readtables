@@ -108,7 +108,8 @@
   (list :named-readtable (sly-named-readtables--grok-current-table)))
 
 ;;;###autoload
-(add-to-list 'sly-contribs 'sly-named-readtables 'append)
+(with-eval-after-load 'sly
+  (add-to-list 'sly-contribs 'sly-named-readtables 'append))
 
 (provide 'sly-named-readtables)
 ;;; sly-named-readtables.el ends here

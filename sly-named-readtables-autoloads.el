@@ -10,7 +10,8 @@
 ;;;;;;  (0 0 0 0))
 ;;; Generated autoloads from sly-named-readtables.el
 
-(add-to-list 'sly-contribs 'sly-named-readtables 'append)
+(with-eval-after-load 'sly
+  (add-to-list 'sly-contribs 'sly-named-readtables 'append))
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "sly-named-readtables" '("sly-named-readtable")))
 
